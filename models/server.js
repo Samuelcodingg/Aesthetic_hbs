@@ -1,11 +1,19 @@
 const express = require('express');
+const hbs = require('hbs');
 
 class Server {
     constructor() {
         this.app = express();
         this.port = process.env.PORT;
     
+        this.middlewares();
+
         this.routes();
+    }
+
+    middlewares() {
+        this.app.set('view engine', 'hbs');
+        hbs.registerPartials(__dirname + '/views/partials');
     }
 
     routes() {
