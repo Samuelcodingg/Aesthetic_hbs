@@ -14,7 +14,7 @@ This website was developed because I wanted to apply my recently acquired knowle
 Like you can see, "node_modules/" is in the .gitignore file, so for running the app, you need the corresponding packages, just execute the next command (you need to have node and npm in your computer obviusly)
 
 ```
-npm init
+npm init -y
 ```
 
 ## Possibly isues
