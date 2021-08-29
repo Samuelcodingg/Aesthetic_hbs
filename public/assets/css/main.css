@@ -1,0 +1,35 @@
+/*utilities*/
+
+.pointer {
+    cursor: pointer;
+}
+
+.section {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*sections*/
+
+.first-section {
+    background-image: url(../../img/first-image.jpg);
+}
+
+.second-section {
+    background-image: url(../../img/second-image.jpg);
+}
+
+.third-section {
+    background-image: url(../../img/third-image.png);
+}
+
+.container-transparent {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+    background-color: black;
+}

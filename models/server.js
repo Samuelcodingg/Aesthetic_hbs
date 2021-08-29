@@ -1,5 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
+const path = require('path');
 
 class Server {
     constructor() {
@@ -13,7 +14,9 @@ class Server {
 
     middlewares() {
         this.app.set('view engine', 'hbs');
-        hbs.registerPartials(__dirname + '/views/partials');
+        hbs.registerPartials( path.join(__dirname, '../', '/views/partials'));
+
+        this.app.use(express.static('public'));
     }
 
     routes() {
